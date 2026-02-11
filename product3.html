@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bluetooth Speaker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>MyShop</h1>
+    <div class="cart">🛒 Cart: <span id="count">0</span></div>
+</header>
+
+<section class="product">
+    <div class="product-image">
+        <img src="assets/product3.jpg">
+        <div class="thumbnail-row">
+            <img src="assets/product3.jpg" onclick="changeImage(this)">
+            <img src="assets/product1.jpg" onclick="changeImage(this)">
+            <img src="assets/product2.jpg" onclick="changeImage(this)">
+        </div>
+    </div>
+
+    <div class="product-details">
+        <a href="index.html" class="back-btn">← Back to Products</a>
+        <h2>Bluetooth Speaker</h2>
+        <div class="rating">★★★★★ (5/5)</div>
+        <p class="price">₹1,499</p>
+        <p>Portable speaker with deep bass and long battery life.</p>
+
+        <label>Quantity:</label>
+        <input type="number" value="1" min="1">
+
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+</section>
+
+<script src="script.js"></script>
+<footer class="footer">
+  <p>© 2026 Tejashri Phadtare | Mini E-commerce Project</p>
+</footer>
+
+</body>
+</html>
+
